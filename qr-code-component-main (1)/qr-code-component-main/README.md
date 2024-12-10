@@ -12,13 +12,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 
 
 ### Screenshot
 
-!"C:\Users\user\Pictures\Screenshots\Screenshot 2024-12-10 135639.png"
+!"C:\Users\user\Pictures\Screenshot of finish project.jpg"
 
 
 
@@ -33,6 +33,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/DetDet91)
+- Frontend Mentor - [@DetDet91](https://www.frontendmentor.io/profile/DetDet91)
 
 
