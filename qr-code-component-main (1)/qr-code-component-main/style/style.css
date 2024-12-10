@@ -1,40 +1,77 @@
-body{
+/* Importing the Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #d8e2f1;
+    font-family: 'Outfit', sans-serif; /* Updated font-family */
+    background-color: hsl(212, 45%, 89%); /* Slate 300 background */
 }
 
-.card{
-    background-color: #fff;
+.card {
+    background-color: hsl(0, 0%, 100%); /* White card */
     border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0,0 ,0, 0.1);
-    width: 320px;
-    padding: 20px;  
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 320px; /* Fixed width for smaller devices */
+    max-width: 100%; /* Responsive scaling for smaller screens */
+    padding: 20px;
     text-align: center;
 }
 
-.qr-code{
+.qr-code img {
     width: 100%;
+    max-width: 280px; /* Ensures the QR code doesn't exceed the card */
     border-radius: 10px;
 }
 
-.card-content h1{
-    font-size: 1.2rem;
-    color: #1f3251;
+.card-content h1 {
+    font-size: 1.5rem; /* Scalable title font */
+    color: hsl(218, 44%, 22%); /* Slate 900 for strong contrast */
     margin-top: 15px;
     margin-bottom: 10px;
+    font-weight: 700; /* Bold weight for the title */
+    line-height: 1.4;
 }
-.attribution{
+
+.card-content p {
+    font-size: 15px; /* Matches body copy size from the guide */
+    color: hsl(216, 15%, 48%); /* Slate 500 */
+    line-height: 1.6;
+    margin: 0;
+}
+
+.attribution {
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
-    color: #555;
+    color: hsl(216, 15%, 48%); /* Matches Slate 500 */
 }
-.attribution a{
-    color: #1f3251;
+
+.attribution a {
+    color: hsl(218, 44%, 22%); /* Matches Slate 900 */
     text-decoration: none;
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+.attribution a:hover {
+    text-decoration: underline; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .card {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px; /* Reduce padding for small devices */
+    }
+
+    .card-content h1 {
+        font-size: 1.3rem; /* Slightly smaller title for mobile */
+    }
+
+    .card-content p {
+        font-size: 14px; /* Smaller paragraph text for mobile */
+    }
 }
