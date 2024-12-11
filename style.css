@@ -3,6 +3,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -64,6 +65,7 @@ body {
 @media (max-width: 375px) {
     .card {
         width: 90%; /* Adjust width for smaller screens */
+        margin: 0;/* Center the card horizontally */
         padding: 15px; /* Reduce padding for small devices */
     }
 
@@ -73,5 +75,6 @@ body {
 
     .card-content p {
         font-size: 14px; /* Smaller paragraph text for mobile */
+        line-height: 1.50; /*Imporved readability*/
     }
 }
